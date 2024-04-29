@@ -17,3 +17,14 @@ email = "peregrinus@planet.ms"
 
 [project.urls]
 Home = "https://github.com/tom65536/enceladus"
+
+[tool.mypy]
+warn_unused_configs = true
+packages = "enceladus"
+
+[tool.bandit]
+#targets = ["src/enceladus"]
+tests = ["B101", "B102", "B110", "B112"]
+
+[tool.vulture]
+paths = ["src/enceladus", "tests"]

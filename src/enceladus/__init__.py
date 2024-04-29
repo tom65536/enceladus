@@ -1,6 +1,4 @@
-"""
-Enceladus Main Module.
-"""
+"""Enceladus Main Module."""
 
 from __future__ import annotations
 
