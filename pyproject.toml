@@ -28,3 +28,9 @@ tests = ["B101", "B102", "B110", "B112"]
 
 [tool.vulture]
 paths = ["src/enceladus", "tests"]
+
+[tool.pydoclint]
+style = "numpy"
+
+[tool.black]
+skip-string-normalization = true
