@@ -35,3 +35,6 @@ style = "numpy"
 
 [tool.black]
 skip-string-normalization = true
+
+[tool.pytesti.ini_options]
+addopts = "--cov=enceladus --cov-report=term"
