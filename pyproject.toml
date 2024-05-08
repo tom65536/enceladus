@@ -6,11 +6,25 @@ build-backend = "flit_core.buildapi"
 name = "enceladus"
 readme = "README.md"
 license = {file = "LICENSE"}
-classifiers = ["License :: OSI Approved :: MIT License"]
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Games/Entertainment :: Role-Playing",
+    "Topic :: Games/Entertainment :: Simulation",
+    "Topic :: Scientific/Engineering :: Astronomy",
+    "Typing :: Typed"
+]
 dynamic = ["version", "description"]
 dependencies = [
-    "deal>=4.24"
+    "deal>=4.24,<5",
+    "impunity>=1.0.4,<2"
 ]
+requires-python = ">=3.11"
 
 [[project.authors]]
 name = "tom65536"
@@ -18,6 +32,7 @@ email = "peregrinus@planet.ms"
 
 [project.urls]
 Home = "https://github.com/tom65536/enceladus"
+Source = "https://github.com/tom65536/enceladus"
 
 [tool.mypy]
 warn_unused_configs = true
@@ -29,9 +44,6 @@ tests = ["B101", "B102", "B110", "B112"]
 
 [tool.vulture]
 paths = ["src/enceladus", "tests"]
-
-[tool.pydoclint]
-style = "numpy"
 
 [tool.black]
 skip-string-normalization = true
